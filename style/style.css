@@ -1,0 +1,203 @@
+
+body {
+    background-color: #454242;
+	position: absolute;
+    height: 100vh;
+	width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    position: absolute;
+    width: 60vw;
+    left: 50%;
+    top: 5vh;
+    transform: translateX(-50%);
+    /*display: flex;
+    flex-direction: column;*/
+    padding: 0;
+    margin: 0;
+}
+
+.boxcontainer {
+    border: 1px #FFF solid;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 2vh;
+}
+
+.boxcontainer1 {
+    border: 1px #FFF solid;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 2vh;
+}
+
+.head {
+    width: 100%;
+    height: 5vh;
+    background-color: #ADA4A4;
+    
+}
+
+.box1 {
+    width: 100%;
+    height: 45vh;
+    background-color: #150C0C;
+}
+
+#picture {
+    position: absolute;
+	width: 20vh;
+	height: 20vh;
+	top: 15vh;
+	left: 6vw;
+	overflow: hidden;
+}
+
+#profilepicture {
+    width: auto;
+	height: 100%;
+}
+
+#myname {
+    position: absolute;
+	top: 19vh;
+	left: 35%;
+	font-size: 3vw;
+    color: #FFF;
+}
+
+#qoute {
+    position: absolute;
+    top: 25vh;
+    left: 35%;
+    font-size: 2vw;
+    color: #FFF;
+    opacity: 0.8;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    #picture {
+        position: absolute;
+        width: 20vh;
+        height: 20vh;
+        top: 8vh;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+    
+    #myname {
+        position: absolute;
+        top: 30vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 4vw;
+        color: #FFF;
+    }
+    
+    
+    
+    #qoute {
+        position: absolute;
+        top: 35vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2vh;
+        color: #FFF;
+        opacity: 0.8;
+        width: 55vw;
+        text-align: center;
+    }
+    
+    .boxcontainer {
+        border: 1px #FFF solid;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 2vh;
+    }
+    
+    .boxcontainer1 {
+        border: 1px #FFF solid;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 2vh;
+    }
+    
+}
+
+
+
+#links {
+    position: absolute;
+    top: 43vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px #FFF solid;
+    width: 50vw;
+    height: 3vh;
+}
+
+.aboutme {
+    font-size: 3vh;
+    padding-top: 1%;
+}
+
+.resume {
+    font-size: 3vh;
+    padding-top: 1%;
+}
+
+.about {
+    
+}
+
+#personalinfo {
+    position: absolute;
+	width: 90%;
+	height: 23%;
+	top: 10%;
+	left: 0;
+}
+
+.textsize {
+    margin-left: 2%;
+	font-size: 20px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	height: 40px;
+}
+
+.schoollist {
+    position: absolute;
+	top: 0;
+	left: 35%;
+	width: 40%;
+	font-size: 20px;
+}
+
+#list {
+    margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.below {
+    font-size: 15px;
+	margin-top: 2px;
+	height: 15px;
+}
+
+.box2 {
+    width: 100%;
+    height: 45vh;
+    background-color: #150C0C;
+}
