@@ -1,7 +1,8 @@
 <html>
     <head>
         <title>Crisandro Basoy's Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+                                       maximum-scale=1, user-scalable=0"/>
         
         <!--CSS-->
 	    <link href="style/style.css" rel="stylesheet" type="text/css"/>
@@ -11,9 +12,14 @@
         
         <!--SSCRIPT FILE-->
 	    <script type="text/javascript" src="script/script.js"></script>
+        
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     </head>
-    <body>
-        <div class="container">
+    <body class="mybody">
+        <div class="container1">
             <div class="boxcontainer">
                 <div class="head">
                     <center>
@@ -37,39 +43,142 @@
                     </center>
                 </div>
                 <div class="part box2">
-                    <div id="personalinfo">
-						
-						<div id="elementary" class="textsize">Elementary:</div>
-						
-						<div id="elementary" class="textsize">Secondary:</div>
-						
-						<div id="elementary" class="textsize">College:</div>
+                    <div class="education">EDUCATION</div>
+                    <div class="elemschool">Elementary</div>
+                    <div class="elemyear">
+                        <div class="inline" id="elemstart"></div> - 
+                        <div class="inline" id="elemend"></div>
+                    </div>
+                    <div class="elem" id="elem">text here</div>
+                    
+                    <div class="highschool">Secondary</div>
+                    <div class="highyear">
+                        <div class="inline" id="secstart"></div> - 
+                        <div class="inline" id="secend"></div>
+                    </div>
+                    <div class="high" id="high">text here</div>
+                    
+                    <div class="collegeschool">College</div>
+                    <div class="collegeyear">
+                        <div class="inline" id="colstart"></div> - 
+                        <div class="inline" id="colend"></div>
+                    </div>
+                    <div class="college" id="college">text here</div>
+                    
+                    <div class="workexp">WORK EXPERIENCE</div>
 
-						<div class="schoollist">
-							<center>
-								<div id="list">
-									<div class="inline" id="elementartschool"></div>
-									<div class="below">
-										<div class="inline" id="elementaryfirst"></div> - <div class="inline" id="elementaryend"></div>
-									</div>
-								</div>
-								<div id="list">
-									<div class="inline" id="secondaryschool"></div>
-									<div class="below">
-										<div class="inline" id="secondaryfirst"></div> - <div class="inline" id="secondaryend"></div>
-									</div>
-								</div>
-								<div id="list">
-									<div class="inline" id="collegeschool"></div>
-									<div class="below">
-										<div class="inline" id="collegefirst"></div> - <div class="inline" id="collegeend"></div>
-									</div>
-								</div>
-							</center>
-						</div>
+					<div id="workinfo">
+						<div id="worklist">
+                            <div id='firstjob'>
+                                <div class='inline jobtitle' >
+                                    <h2 id="jobtitle">Creative Developer</h2>
+                                </div>
+                                <div class='inline pull-right'>
+                                    <div class='dates'>may 2017 - feb 2018</div>
+                                </div>
+                                <div class='desc'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                            </div>
+                        </div>
 					</div>
+                    
+                    <div class="separate"></div>
+                    
+                    <div class="skills">
+                        <div class="skilltext">SKILLS</div>
+                        
+                        <div id="myprogressps">
+                            <div id="progresstext" class="inline">Photoshop</div>
+                            <div class="progress" id="myprogressbarps">
+                                <div class="progress-bar progress-bar-striped active photoshop" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="myprogressai">
+                            <div id="progresstext" class="inline">Illustrator</div>
+                            <div class="progress" id="myprogressbarai">
+                                <div class="progress-bar progress-bar-striped active illustrator" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myprogressid">
+                            <div id="progresstext" class="inline">InDesign</div>
+                            <div class="progress" id="myprogressbarid">
+                                <div class="progress-bar progress-bar-striped active indesign" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="myprogressmo">
+                            <div id="progresstext" class="inline">Microsoft Office</div>
+                            <div class="progress" id="myprogressbarmo">
+                                <div class="progress-bar progress-bar-striped active microsoft" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myprogressus">
+                            <div id="progresstext" class="inline">User</div>
+                            <div class="progress" id="myprogressbarus">
+                                <div class="progress-bar progress-bar-striped active user" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myprogressty">
+                            <div id="progresstext" class="inline">Typography</div>
+                            <div class="progress" id="myprogressbarty">
+                                <div class="progress-bar progress-bar-striped active typography" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myprogresswa">
+                            <div id="progresstext" class="inline">Web Application</div>
+                            <div class="progress" id="myprogressbarwa">
+                                <div class="progress-bar progress-bar-striped active webapp" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myprogressht">
+                            <div id="progresstext" class="inline">HTML5</div>
+                            <div class="progress" id="myprogressbarht">
+                                <div class="progress-bar progress-bar-striped active html" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myprogresscs">
+                            <div id="progresstext" class="inline">CSS</div>
+                            <div class="progress" id="myprogressbarcs">
+                                <div class="progress-bar progress-bar-striped active css" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myprogresspm">
+                            <div id="progresstext" class="inline">PHP/MySql</div>
+                            <div class="progress" id="myprogressbarpm">
+                                <div class="progress-bar progress-bar-striped active php" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myprogressjq">
+                            <div id="progresstext" class="inline">Javascript/Jquery</div>
+                            <div class="progress" id="myprogressbarjq">
+                                <div class="progress-bar progress-bar-striped active javascript" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
                 </div>
             </div>
+            
             
         </div>
     </body>

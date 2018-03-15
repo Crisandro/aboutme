@@ -1,45 +1,41 @@
-
-body {
+.mybody {
     background-color: #454242;
 	position: absolute;
     height: 100vh;
-	width: 100%;
+	width: 100vw;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
 
-.container {
+.container1 {
     position: absolute;
-    width: 60vw;
+    width: 800px;
     left: 50%;
     top: 5vh;
     transform: translateX(-50%);
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
 }
 
-.boxcontainer {
-    border: 1px #FFF solid;
-    width: 100%;
-    height: 50vh;
-    margin-bottom: 2vh;
-}
 
 .boxcontainer1 {
     border: 1px #FFF solid;
     width: 100%;
-    height: 50vh;
+    height: 45.2vh;
     margin-bottom: 2vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .head {
     width: 100%;
     height: 5vh;
     background-color: #ADA4A4;
-    
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;   
 }
 
 .box1 {
@@ -48,12 +44,18 @@ body {
     background-color: #150C0C;
 }
 
+.box2 {
+    width: 100%;
+    height: 40vh;
+    background-color: #150C0C;
+}
+
 #picture {
     position: absolute;
 	width: 20vh;
 	height: 20vh;
 	top: 15vh;
-	left: 6vw;
+	left: 6vh;
 	overflow: hidden;
 }
 
@@ -65,23 +67,395 @@ body {
 #myname {
     position: absolute;
 	top: 19vh;
-	left: 35%;
-	font-size: 3vw;
+	left: 37%;
+	font-size: 5vh;
     color: #FFF;
 }
 
 #qoute {
     position: absolute;
     top: 25vh;
-    left: 35%;
-    font-size: 2vw;
+    left: 37%;
+    font-size: 2vh;
     color: #FFF;
+    width: 30vw;
     opacity: 0.8;
+    
+}
+
+#links {
+    position: absolute;
+    top: 43vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px #FFF solid;
+    width: 60%;
+    height: 3vh;
+}
+
+.aboutme {
+    font-size: 3vh;
+    padding-top: 1%;
+}
+
+.resume {
+    font-size: 3vh;
+    padding-top: 1%;
+}
+
+.elemschool {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 8%;
+    top: 62vh;
+    z-index: 999;
+    color: #ddd;
+    font-size: 2vh;
+}
+
+.elem {
+    top:64vh;
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 11%;
+    z-index: 999;
+    color: #FFF;
+    font-size: 3vh;
+}
+
+.boxcontainer {
+    border: 1px #FFF solid;
+    width: 100%;
+    height: 50.2vh;
+    margin-bottom: 2vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
+.highschool {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 8%;
+    top: 68vh;
+    z-index: 999;
+    color: #ddd;
+    font-size: 2vh;
+}
 
-@media only screen and (max-width: 1200px) {
+.high {
+    top:70vh;
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 11%;
+    z-index: 999;
+    color: #FFF;
+    font-size: 3vh;
+}
+
+.collegeschool {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 8%;
+    top: 74vh;
+    z-index: 999;
+    color: #ddd;
+    font-size: 2vh;
+}
+
+.college {
+    top:76vh;
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 11%;
+    z-index: 999;
+    color: #FFF;
+    font-size: 3vh;
+}
+
+.elemyear {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 23%;
+    top: 62.4vh;
+    z-index: 999;
+    color: #FFF;
+    font-size: 1vh;
+    border: 1px #FFF solid;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #45618e;
+}
+
+.highyear {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 23%;
+    top: 68.4vh;
+    z-index: 999;
+    color: #FFF;
+    font-size: 1vh;
+    border: 1px #FFF solid;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #45618e;
+}
+
+.collegeyear {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 23%;
+    top: 74.4vh;
+    z-index: 999;
+    color: #FFF;
+    font-size: 1vh;
+    border: 1px #FFF solid;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #45618e;
+}
+
+.education {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 4%;
+    top: 58vh;
+    z-index: 999;
+    color: #FFF;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.skilltext {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 4%;
+    top: 1vh;
+    z-index: 999;
+    color: #FFF;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.workexp {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 4%;
+    top: 82vh;
+    z-index: 999;
+    color: #FFF;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+#workinfo {
+    position: absolute;
+	width: 70%;
+	height: 15vh;
+	top: 85vh;
+	left: 1vw;
+}
+
+#worklist {
+    position: absolute;
+}
+
+#firstjob {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.photoshop{
+	background-color: #0341a5 !important;
+}
+
+.illustrator{
+	background-color: #ba5c0b !important;
+}
+
+.indesign{
+	background-color: #87069e !important;
+}
+
+.microsoft{
+	background-color: #205fd6 !important;
+}
+
+.user{
+	background-color: #15913e !important;
+}
+
+.typography	{
+	background-color: #000 !important;
+}
+
+.webapp	{
+	background-color: #d11215 !important;
+}
+
+.html	{
+	background-color: #e26e1b !important;
+}
+
+.css	{
+	background-color: #7b9935 !important;
+}
+
+.php	{
+	background-color: #86a4ef !important;
+}
+
+.javascript	{
+	background-color: #b2b20a !important;
+}
+
+
+.separate {
+    position: absolute;
+    right: 35%;
+    width: 0;
+    height: 40vh;
+    border: 1px #FFF solid;
+}
+
+#myprogressps {
+    background-color: #ddd;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 4.8%;
+    top: 6vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogressai {
+    background-color: #ddd;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 2.1vh;
+    top: 9vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogressid {
+    background-color: #ddd;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 4.9%;
+    top: 12vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogressmo {
+    background-color: #ddd;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 4.8%;
+    top: 15vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogressus {
+    background-color: #ddd;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 4.8%;
+    top: 18vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogressty {
+    background-color: #ddd;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 4.8%;
+    top: 21vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogresswa {
+    background-color: #ddd;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 4.9%;
+    top: 24vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogressht {
+    background-color: #ddd;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 4.8%;
+    top: 27vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogresscs {
+    background-color: #ddd;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 4.8%;
+    top: 30vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogresspm {
+    background-color: #ddd;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 4.9%;
+    top: 33vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#myprogressjq {
+    background-color: #ddd;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 4.8%;
+    top: 36vh;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+
+@media screen and (max-width: 750px) {
     #picture {
         position: absolute;
         width: 20vh;
@@ -97,107 +471,476 @@ body {
         top: 30vh;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 4vw;
+        font-size: 5vh;
         color: #FFF;
     }
     
-    
-    
     #qoute {
         position: absolute;
-        top: 35vh;
+        top: 35.6vh;
         left: 50%;
         transform: translateX(-50%);
         font-size: 2vh;
         color: #FFF;
         opacity: 0.8;
-        width: 55vw;
+        width: 90vw;
         text-align: center;
     }
     
-    .boxcontainer {
+    
+    body .boxcontainer {
         border: 1px #FFF solid;
         width: 100%;
         height: 50vh;
-        margin-bottom: 2vh;
+        margin-bottom: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .container1 {
+        position: absolute;
+        width: 800px;
+        left: 50%;
+        top: 5vh;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
     
     .boxcontainer1 {
         border: 1px #FFF solid;
         width: 100%;
-        height: 50vh;
-        margin-bottom: 2vh;
+        height: 100vh;
+        top: 100%;
+    }
+    
+    .boxcontainer1 .elemschool {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        z-index: 999;
+        color: #ddd;
+        transform: translateX(-50%);
+        top: 60vh;
+        font-size: 2vh;
+    }
+    
+    .boxcontainer1 .highschool {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        z-index: 999;
+        color: #FFF;
+        transform: translateX(-50%);
+        top: 69vh;
+        font-size: 2vh;
+    }
+    
+    .boxcontainer1 .collegeschool {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        z-index: 999;
+        color: #FFF;
+        transform: translateX(-50%);
+        top: 78vh;
+        font-size: 2vh;
+    }
+    
+    .box2 {
+        width: 100%;
+        height: 100vh;
+        background-color: #150C0C;
+    }
+    
+    .education {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 56vh;
+        z-index: 999;
+        color: #FFF;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    
+    .skilltext {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0vh;
+        z-index: 999;
+        color: #FFF;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    
+    .workexp {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90vh;
+        z-index: 999;
+        color: #FFF;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    
+    #workinfo {
+        position: absolute;
+        width: 90vw;
+        height: 15vh;
+        top: 95vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .separate {
+        position: absolute;
+        right: 0;
+        top: 113vh;
+        width: 100%;
+        height: 0;
+        border: 1px #FFF solid;
+    }
+    
+    .skills {
+        position: absolute;
+        width: 90vw;
+        height: 45vh;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 115vh;
+    }
+    
+    #firstjob{
+        position: absolute;
+        width: 90vw;
+        height: auto;
+    }
+    
+    .boxcontainer1 .high {
+        top:71vh;
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        z-index: 999;
+        color: #FFF;
+        transform: translateX(-50%);
+        font-size: 3vh
+    }
+    
+    .boxcontainer1 .college {
+        top:80vh;
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        z-index: 999;
+        color: #FFF;
+        transform: translateX(-50%);
+        font-size: 3vh
+    }
+    
+    .boxcontainer1 .elem {
+        top:62vh;
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        z-index: 999;
+        color: #FFF;
+        transform: translateX(-50%);
+        font-size: 3vh
+    }
+    
+    .elemyear {
+        top:65.5vh;
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        z-index: 999;
+        color: #FFF;
+        transform: translateX(-50%);
+        font-size: 1vh
+    }
+    
+    .highyear {
+        top:74.5vh;
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        z-index: 999;
+        color: #FFF;
+        transform: translateX(-50%);
+        font-size: 1vh
+    }
+    
+    .collegeyear {
+        top:83.4vh;
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50%;
+        z-index: 999;
+        color: #FFF;
+        transform: translateX(-50%);
+        font-size: 1vh
+    }
+    #links {
+        position: absolute;
+        top: 44vh;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px #FFF solid;
+        width: 90vw;
+        height: 3vh;
+    }
+    
+    .jobtitle {
+        margin-left: 6%;
+        color: #FFF;
+    }
+
+    .dates {
+        margin-top: 2.5vh;
+        font-size: 1vh;
+        border: 1px #FFF solid;
+        border-radius: 3px;
+        padding: 3px;
+        background-color: #45618e;
+        color: #FFF;
+    }
+
+    .desc {
+        margin-left: 8%;
+        color: #FFF;
+        font-size: 1vh
+    }
+    
+    #myprogressps {
+        background-color: #ddd;
+        position: absolute;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4.8%;
+        top: 5vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+    
+    #myprogressai {
+        background-color: #ddd;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 2.2vh;
+        top: 8vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    #myprogressid {
+        background-color: #ddd;
+        position: absolute;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4.9%;
+        top: 11vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    #myprogressmo {
+        background-color: #ddd;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 4.8%;
+        top: 14vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    #myprogressus {
+        background-color: #ddd;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 4.8%;
+        top: 17vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    #myprogressty {
+        background-color: #ddd;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 4.9%;
+        top: 20vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    #myprogresswa {
+        background-color: #ddd;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 4.9%;
+        top: 23vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    #myprogressht {
+        background-color: #ddd;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 4.8%;
+        top: 26vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    #myprogresscs {
+        background-color: #ddd;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 4.8%;
+        top: 29vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    #myprogresspm {
+        background-color: #ddd;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 4.9%;
+        top: 32vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    #myprogressjq {
+        background-color: #ddd;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 4.8%;
+        top: 35vh;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+}
+
+
+.inline {
+    display: inline-block;
+}
+
+.jobtitle {
+    margin-left: 6%;
+    color: #FFF;
+}
+
+.dates {
+    margin-top: 2.5vh;
+    font-size: 1vh;
+    border: 1px #FFF solid;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #45618e;
+    color: #FFF;
+}
+
+.desc {
+    margin-left: 8%;
+    color: #FFF;
+    font-size: 1vh
+}
+
+@media screen and (max-width: 430px) {
+    .dates {
+        position: absolute;
+        left: 8%;
+        top: 11vw;
+        margin-top: 2.5vh;
+        font-size: 1vh;
+        border: 1px #FFF solid;
+        border-radius: 3px;
+        padding: 3px;
+        background-color: #45618e;
+        color: #FFF;
+    }
+    
+    .desc {
+        margin-left: 8%;
+        color: #FFF;
+        font-size: 1vh;
+        margin-top: 3vh;
     }
     
 }
 
 
 
-#links {
+.skills {
     position: absolute;
-    top: 43vh;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px #FFF solid;
-    width: 50vw;
-    height: 3vh;
-}
-
-.aboutme {
-    font-size: 3vh;
-    padding-top: 1%;
-}
-
-.resume {
-    font-size: 3vh;
-    padding-top: 1%;
-}
-
-.about {
-    
-}
-
-#personalinfo {
-    position: absolute;
-	width: 90%;
-	height: 23%;
-	top: 10%;
-	left: 0;
-}
-
-.textsize {
-    margin-left: 2%;
-	font-size: 20px;
-	margin-bottom: 15px;
-	margin-top: 15px;
-	height: 40px;
-}
-
-.schoollist {
-    position: absolute;
-	top: 0;
-	left: 35%;
-	width: 40%;
-	font-size: 20px;
-}
-
-#list {
-    margin-bottom: 15px;
-	margin-top: 15px;
-}
-
-.inline {
-    display: inline-block;
-}
-
-.below {
-    font-size: 15px;
-	margin-top: 2px;
-	height: 15px;
-}
-
-.box2 {
-    width: 100%;
+    width: 36%;
     height: 45vh;
-    background-color: #150C0C;
+    right: 0;
 }
+
+
+
+#progresstext {
+    position: absolute;
+	z-index: 99;
+	color: #FFF;
+	font-weight: bold;
+    font-size: 1.5vh;
+	left: 3%;
+}
+
+.progress {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    height: 2vh !important;
+}
+
