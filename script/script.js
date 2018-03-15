@@ -10,10 +10,10 @@ var loads = 0;
 var id = setInterval(initialize,20);
 
 function initialize(){
-    initcrisandro();
+    
     if(loads == 10){
         clearInterval(id);
-        
+        initcrisandro();
     }
     else{
         loads = loads + 1; 
