@@ -6,7 +6,26 @@ var college = JSON.parse(college);
 var workexpe = JSON.parse(workexpe);
 var skills = JSON.parse(skills);
 
+var loads = 0;
+var id = setInterval(initialize,20);
+
+function initialize(){
+    initcrisandro();
+    if(loads == 10){
+        clearInterval(id);
+        
+    }
+    else{
+        loads = loads + 1; 
+        document.getElementById("container1").style.animation = "getin 2s ease";
+        console.log(loads);
+    }
+    
+    
+}
+
 function initcrisandro() {
+    
     document.getElementById("profilepicture").src = other.profilepicture;
     document.getElementById("myname").innerHTML = aboutme.name;
     document.getElementById("qoute").innerHTML = aboutme.qoute;
@@ -54,4 +73,4 @@ function workexp(){
     }  
 }
 
-window.addEventListener("load", initcrisandro);
+window.addEventListener("load", initialize);
