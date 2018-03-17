@@ -529,8 +529,8 @@
         border: 1px #FFF solid;
         width: 100%;
         margin-bottom: 0;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
     }
     
     .container1 {
@@ -583,6 +583,14 @@
         transform: translateX(-50%);
         top: 78vh;
         font-size: 2vh;
+    }
+    
+    .head {
+        width: 100%;
+        height: 5vh;
+        background-color: #ADA4A4;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;   
     }
     
     .box2 {
@@ -657,7 +665,7 @@
     }
     
     #resumepart {
-        height: 100vh;
+        height: 98vh;
     }
     
     .skills {
@@ -934,14 +942,13 @@
 
     .penhead {
         position: relative;
-        width: 90%;
-        top: 5%;
+        width: 100%;
+        top: 0%;
         left: 0%;
-        transform: translateY(-50%);
+        text-align: center;
         color: #FFF;
         font-size: 3vh;
         height: 4vh;
-        background-color: #DDD;
     }
 
     .penbody {
