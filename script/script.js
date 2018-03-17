@@ -5,6 +5,7 @@ var highschool = JSON.parse(highschool);
 var college = JSON.parse(college);
 var workexpe = JSON.parse(workexpe);
 var skills = JSON.parse(skills);
+var pen = JSON.parse(pen);
 
 var loads = 0;
 var id = setInterval(initialize,20);
@@ -25,7 +26,7 @@ function initialize(){
 }
 
 function initcrisandro() {
-    
+    port();
     document.getElementById("profilepicture").src = other.profilepicture;
     document.getElementById("myname").innerHTML = aboutme.name;
     document.getElementById("qoute").innerHTML = aboutme.qoute;
@@ -56,19 +57,20 @@ function initcrisandro() {
     document.getElementById("myprogressbarjq").style.width = skills.Javascript;
 }
 
-function workexp(){
-	for(var i=0;i<workexpe.length;i++)
+function port(){
+	for(var i=0;i<pen.length;i++)
     {
+        var penstart="<div class='pens' id='mypen'>";
+        var head="<div class='penhead'>"+pen[i]["penname"]+"</div>";
+        var body="<div class='penbody'>";
+        var frame = "<iframe height='100%' scrolling='no' title='Dark Room' src='"+pen[i]["iframe"]+"' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>";
+        var framebody = "See the Pen <a href='"+pen[i]["pen"]+"'>Dark Room</a> by Crisandro Basoy (<a href='https://codepen.io/crisandrobasoy'>@crisandrobasoy</a>) on <a href='https://codepen.io'>CodePen</a>.";
+        var frameend= "</iframe>";
+        var bodyend = "</div>";
+        var penclose="</div>";
 
-        var listing="<div id='list1'>";
-        var firstdiv="<div class='inline'><h2>"+workexpe[i]["position"]+"</h2></div>";
-        var pullright="<div class='inline pull-right'>";
-        var dates="<div class='dates'>"+workexpe[i]["startm"]+" "+workexpe[i]["starty"]+" - "+workexpe[i]["endm"]+" "+workexpe[i]["endy"]+"</div>";
-        var pullrightclose="</div>";
-        var below="<div class='below1'>"+workexpe[i]["description"]+"</div>"
-        var listingclose="</div>";
-
-       $("#worklist").append(listing+firstdiv+pullright+dates+pullrightclose+below+listingclose); 
+        /*console.log(penstart+head+body+frame+framebody+frameend+bodyend+penclose);*/
+       $("#penlist").append(penstart+head+body+frame+framebody+frameend+bodyend+penclose); 
 
     }  
 }
