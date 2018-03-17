@@ -494,6 +494,7 @@
 
 .desc {
     margin-left: 8%;
+    margin-top: 0%;
     color: #FFF;
     font-size: 1.2vh;
     transition: 0.5s;
@@ -823,10 +824,10 @@
     }
 
     .desc {
+        position: relative;
         top: 3vh;
         margin-top: 0;
         margin-left: 0;
-        position: relative;
         left: 0%;
         text-align: center;
         color: #FFF;
@@ -1026,8 +1027,9 @@
         margin-left: 0%;
         color: #FFF;
         font-size: 1vh;
-        margin-top: 1vh;
+        margin-top: 2vh;
         position: relative;
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
         color: #FFF;
