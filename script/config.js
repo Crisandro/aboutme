@@ -21,5 +21,5 @@ var workexpe =
 var mynumbers =
 	'[{"number":"000-000-0000"},{"number":"032-401-0000"}]';
 var mycontact =
-	'{"gmail":"You can email me here.", "facebook":"https://www.facebook.com/sieghart.crisandro"}';
+	'{"gmail":"crisandro.cloudemployee@gmail.com", "facebook":"https://www.facebook.com/sieghart.crisandro", "github":"https://github.com/Crisandro", "codepen":"https://codepen.io/crisandrobasoy/"}';
 var pen = '[{"penname":"Dark Room", "iframe":"//codepen.io/crisandrobasoy/embed/PRGQqx/?height=265&theme-id=0,result&embed-version=2", "pen":"https://codepen.io/crisandrobasoy/pen/PRGQqx/"}]';

@@ -23,6 +23,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+    transition: 0.5s;
 }
 
 
@@ -54,6 +55,7 @@
     width: 100%;
     height: 50vh;
     background-color: #150C0C;
+    transition: 0.5s;
 }
 
 #picture {
@@ -76,6 +78,7 @@
 	left: 37%;
 	font-size: 5vh;
     color: #FFF;
+    transition: 0.5s;
 }
 
 #qoute {
@@ -86,18 +89,10 @@
     color: #FFF;
     width: 30vw;
     opacity: 0.8;
-    
+    transition: 0.5s;
 }
 
-#links {
-    position: absolute;
-    top: 43vh;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px #FFF solid;
-    width: 60%;
-    height: 3vh;
-}
+
 
 .aboutme {
     font-size: 3vh;
@@ -118,6 +113,7 @@
     z-index: 999;
     color: #ddd;
     font-size: 2vh;
+    transition: 0.5s;
 }
 
 .elem {
@@ -129,6 +125,7 @@
     z-index: 999;
     color: #FFF;
     font-size: 3vh;
+    transition: 0.5s;
 }
 
 .boxcontainer {
@@ -149,6 +146,7 @@
     z-index: 999;
     color: #ddd;
     font-size: 2vh;
+    transition: 0.5s;
 }
 
 .high {
@@ -160,6 +158,7 @@
     z-index: 999;
     color: #FFF;
     font-size: 3vh;
+    transition: 0.5s;
 }
 
 .collegeschool {
@@ -171,6 +170,7 @@
     z-index: 999;
     color: #ddd;
     font-size: 2vh;
+    transition: 0.5s;
 }
 
 .college {
@@ -182,6 +182,7 @@
     z-index: 999;
     color: #FFF;
     font-size: 3vh;
+    transition: 0.5s;
 }
 
 .elemyear {
@@ -197,6 +198,7 @@
     border-radius: 3px;
     padding: 3px;
     background-color: #45618e;
+    transition: 0.5s;
 }
 
 .highyear {
@@ -212,6 +214,7 @@
     border-radius: 3px;
     padding: 3px;
     background-color: #45618e;
+    transition: 0.5s;
 }
 
 .collegeyear {
@@ -227,6 +230,7 @@
     border-radius: 3px;
     padding: 3px;
     background-color: #45618e;
+    transition: 0.5s;
 }
 
 .education {
@@ -239,6 +243,7 @@
     color: #FFF;
     font-size: 3vh;
     font-weight: bold;
+    transition: 0.5s;
 }
 
 .skilltext {
@@ -263,6 +268,7 @@
     color: #FFF;
     font-size: 3vh;
     font-weight: bold;
+    transition: 0.5s;
 }
 
 #workinfo {
@@ -271,6 +277,7 @@
 	height: 15vh;
 	top: 84vh;
 	left: 1vw;
+    transition: 0.5s;
 }
 
 #worklist {
@@ -283,6 +290,11 @@
     height: auto;
     padding: 0;
     margin: 0;
+    transition: 0.5s;
+}
+
+@keyframes zero {
+    from {width: 0;}  
 }
 
 .photoshop{
@@ -337,6 +349,7 @@
     height: 40vh;
     z-index: 999;
     border: 1px #FFF solid;
+    transition: 0.5s;
 }
 
 #myprogressps {
@@ -463,6 +476,7 @@
 .jobtitle {
     margin-left: 6%;
     color: #FFF;
+    transition: 0.5s;
 }
 
 .dates {
@@ -475,12 +489,14 @@
     position: none;
     margin-top: 2.5vh;
     left: 70%;
+    transition: 0.5s;
 }
 
 .desc {
     margin-left: 8%;
     color: #FFF;
-    font-size: 1vh
+    font-size: 1.2vh;
+    transition: 0.5s;
 }
 
 .skills {
@@ -489,6 +505,7 @@
     height: 45vh;    
     left: 65%;
     top: 57vh;
+    transition: 0.5s;
 }
 
 @media screen and (max-width: 750px) {
@@ -504,17 +521,18 @@
     
     #myname {
         position: absolute;
-        top: 30vh;
+        top: 27vh;
         width: 100%;
         left: 0%;
         text-align: center;
         font-size: 5vh;
         color: #FFF;
+        transition: 0.5s;
     }
     
     #qoute {
         position: absolute;
-        top: 35.6vh;
+        top: 33vh;
         left: 50%;
         transform: translateX(-50%);
         font-size: 2vh;
@@ -522,6 +540,7 @@
         opacity: 0.8;
         width: 90vw;
         text-align: center;
+        transition: 0.5s;
     }
     
     
@@ -543,6 +562,7 @@
         flex-direction: column;
         padding: 0;
         margin: 0;
+        transition: 0.5s;
     }
     
 
@@ -559,6 +579,7 @@
         transform: translateX(-50%);
         top: 60vh;
         font-size: 2vh;
+        transition: 0.5s;
     }
     
     .highschool {
@@ -571,6 +592,7 @@
         transform: translateX(-50%);
         top: 69vh;
         font-size: 2vh;
+        transition: 0.5s;
     }
     
     .collegeschool {
@@ -583,6 +605,7 @@
         transform: translateX(-50%);
         top: 78vh;
         font-size: 2vh;
+        transition: 0.5s;
     }
     
     .head {
@@ -605,6 +628,7 @@
         width: 100%;
         height: 45vh;
         background-color: #150C0C;
+        transition: 0.5s;
     }
     
     .education {
@@ -618,6 +642,7 @@
         color: #FFF;
         font-size: 3vh;
         font-weight: bold;
+        transition: 0.5s;
     }
     
     .skilltext {
@@ -644,6 +669,7 @@
         color: #FFF;
         font-size: 3vh;
         font-weight: bold;
+        transition: 0.5s;
     }
     
     #workinfo {
@@ -653,6 +679,7 @@
         top: 93vh;
         left: 50%;
         transform: translateX(-50%);
+        transition: 0.5s;
     }
     
     .separate {
@@ -662,6 +689,7 @@
         width: 100%;
         height: 0;
         border: 1px #FFF solid;
+        transition: 0.5s;
     }
     
     #resumepart {
@@ -675,12 +703,14 @@
         left: 50%;
         transform: translateX(-50%);
         top: 110vh;
+        transition: 0.5s;
     }
     
     #firstjob{
         position: absolute;
         width: 90vw;
         height: auto;
+        transition: 0.5s;
     }
     
     .high {
@@ -692,7 +722,8 @@
         text-align: center;
         z-index: 999;
         color: #FFF;
-        font-size: 3vh
+        font-size: 3vh;
+        transition: 0.5s;
     }
     
     .college {
@@ -704,7 +735,8 @@
         text-align: center;
         z-index: 999;
         color: #FFF;
-        font-size: 3vh
+        font-size: 3vh;
+        transition: 0.5s;
     }
     
     .elem {
@@ -716,7 +748,8 @@
         text-align: center;
         z-index: 999;
         color: #FFF;
-        font-size: 3vh
+        font-size: 3vh;
+        transition: 0.5s;
     }
     
     .elemyear {
@@ -728,7 +761,8 @@
         z-index: 999;
         color: #FFF;
         transform: translateX(-50%);
-        font-size: 1vh
+        font-size: 1vh;
+        transition: 0.5s;
     }
     
     .highyear {
@@ -740,7 +774,8 @@
         z-index: 999;
         color: #FFF;
         transform: translateX(-50%);
-        font-size: 1vh
+        font-size: 1vh;
+        transition: 0.5s;
     }
     
     .collegeyear {
@@ -752,16 +787,18 @@
         z-index: 999;
         color: #FFF;
         transform: translateX(-50%);
-        font-size: 1vh
+        font-size: 1vh;
+        transition: 0.5s;
     }
-    #links {
+
+    
+    ul {
         position: absolute;
         top: 44vh;
         left: 50%;
         transform: translateX(-50%);
-        border: 1px #FFF solid;
-        width: 90vw;
-        height: 3vh;
+        display: flex;
+        
     }
     
     .jobtitle {
@@ -769,6 +806,7 @@
         width: 100%;
         color: #FFF;
         text-align: center;
+        transition: 0.5s;
     }
 
     .dates {
@@ -781,6 +819,7 @@
         transform: translateX(-50%);
         background-color: #45618e;
         color: #FFF;
+        transition: 0.5s;
     }
 
     .desc {
@@ -792,7 +831,8 @@
         text-align: center;
         color: #FFF;
         width: 100%;
-        font-size: 1vh
+        font-size: 1.2vh;
+        transition: 0.5s;
     }
     
     #myprogressps {
@@ -979,6 +1019,7 @@
         padding: 3px;
         background-color: #45618e;
         color: #FFF;
+        transition: 0.5s;
     }
     
     .desc {
@@ -991,7 +1032,8 @@
         transform: translateX(-50%);
         color: #FFF;
         width: 100%;
-        font-size: 1vh
+        font-size: 1.2vh;
+        transition: 0.5s;
     }
     
 }
@@ -1054,12 +1096,100 @@
     height: 39vh;
 }
 
-li {
-    border: 1px #FFF solid;
-    border-radius: 50%;
-    width: 4vw;
-    height: 4vw;
-    border-style: dotted solid;
+ul li {
+    list-style: none;
 }
 
+
+
+ul {
+    position: absolute;
+    top: 43vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    display: block;
+    padding: 9 0 ;
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    line-height: inherit;
+    font-size: 3.5vh;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+ul li a span {
+    position: absolute;
+    transition: transform .5s;
+}
+
+ul li a span:nth-child(1),
+ul li a span:nth-child(3) {
+    width: 100%;
+    height: 1px;
+    background: #C90000;
+}
+
+ul li a span:nth-child(1){
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+ul li a:hover span:nth-child(1){
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+ul li a span:nth-child(3){
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+ul li a:hover span:nth-child(3){
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+
+ul li a span:nth-child(2),
+ul li a span:nth-child(4) {
+    width: 1px;
+    height: 100%;
+    background: #C90000;
+}
+
+ul li a span:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+}
+ul li a:hover span:nth-child(2){
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+ul li a span:nth-child(4){
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top;
+}
+ul li a:hover span:nth-child(4){
+    transform: scale(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
 
