@@ -6,6 +6,7 @@ var college = JSON.parse(college);
 var workexpe = JSON.parse(workexpe);
 var skills = JSON.parse(skills);
 var pen = JSON.parse(pen);
+var mycontact = JSON.parse(mycontact);
 
 var loads = 0;
 var id = setInterval(initialize,20);
@@ -27,6 +28,10 @@ function initialize(){
 
 function initcrisandro() {
     port();
+    document.getElementById("facebooklink").href = mycontact.facebook;
+    document.getElementById("codepenlink").href = mycontact.codepen;
+    document.getElementById("githublink").href = mycontact.github;
+    
     document.getElementById("profilepicture").src = other.profilepicture;
     document.getElementById("myname").innerHTML = aboutme.name;
     document.getElementById("qoute").innerHTML = aboutme.qoute;
@@ -44,16 +49,27 @@ function initcrisandro() {
     document.getElementById("colend").innerHTML = college.end;
     
     //skills
+    document.getElementById("myprogressbarps").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarps").style.width = skills.photoshop;
+    document.getElementById("myprogressbarai").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarai").style.width = skills.illustrator;
+    document.getElementById("myprogressbarid").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarid").style.width = skills.indesign;
+    document.getElementById("myprogressbarmo").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarmo").style.width = skills.Microsoft;
+    document.getElementById("myprogressbarus").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarus").style.width = skills.User;
+    document.getElementById("myprogressbarty").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarty").style.width = skills.typo;
+    document.getElementById("myprogressbarwa").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarwa").style.width = skills.webapp;
+    document.getElementById("myprogressbarht").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarht").style.width = skills.HTML;
+    document.getElementById("myprogressbarcs").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarcs").style.width = skills.CSS;
+    document.getElementById("myprogressbarpm").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarpm").style.width = skills.PHP;
+    document.getElementById("myprogressbarjq").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarjq").style.width = skills.Javascript;
 }
 
