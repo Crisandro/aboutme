@@ -20,7 +20,6 @@ function initialize(){
     else{
         loads = loads + 1; 
         document.getElementById("container1").style.animation = "getin 2s ease";
-        console.log(loads);
     }
     
     
@@ -28,6 +27,7 @@ function initialize(){
 
 function initcrisandro() {
     port();
+    myjobs();
     document.getElementById("facebooklink").href = mycontact.facebook;
     document.getElementById("codepenlink").href = mycontact.codepen;
     document.getElementById("githublink").href = mycontact.github;
@@ -85,10 +85,26 @@ function port(){
         var bodyend = "</div>";
         var penclose="</div>";
 
-        /*console.log(penstart+head+body+frame+framebody+frameend+bodyend+penclose);*/
        $("#penlist").append(penstart+head+body+frame+framebody+frameend+bodyend+penclose); 
 
     }  
 }
 
+function myjobs(){
+	for(var i=0;i<workexpe.length;i++)
+    {
+        var myjob = "<div id='myjob'>";
+        var jobtitle = "<div class='inline jobtitle' >";
+        var jobpos = "<h2 id='jobtitle'>"+workexpe[i]["position"]+"</h2>";
+        var jobtitleclose = "</div>";
+        var jobdate = "<div class='inline pull-right'>";
+        var dates = "<div class='dates'>"+workexpe[i]["startm"]+" "+workexpe[i]["starty"]+" - "+workexpe[i]["endm"]+" "+workexpe[i]["endy"]+"</div>";
+        var jobdateclose = "</div>";
+        var jobdesc = "<div class='desc'>"+workexpe[i]["companyname"]+"</div>";
+        var myjobclose = "</div>";
+        
+       $("#worklist").append(myjob+jobtitle+jobpos+jobtitleclose+jobdate+dates+jobdateclose+jobdesc+myjobclose); 
+
+    }  
+}
 window.addEventListener("load", initialize);

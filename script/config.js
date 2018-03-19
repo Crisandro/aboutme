@@ -15,9 +15,9 @@ var college =
 var skills = 
 	'{"photoshop":"82%", "illustrator":"75%", "indesign":"60%", "Microsoft": "80%", "User": "85%", "typo": "50%", "webapp": "89%", "HTML":"90%", "CSS":"90%", "PHP":"80%", "Javascript":"87%"}';
 var workexpe = 
-	'[{"companyname":"University of the Visayas", "startm":"April", "endm":"June", "starty":"2014", "endy":"2014", "position":"IT Support (OJT)", "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."},'+
-	'{"companyname":"Roccatech", "startm":"July", "endm":"October", "starty":"2016", "endy":"2016", "position":"SEO (OJT)", "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."},'+
-	'{"companyname":"Sizmek", "startm":"May", "endm":"February", "starty":"2017", "endy":"2018", "position":"Creative Developer", "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."}]';	
+	'[{"companyname":"University of the Visayas", "startm":"Apr", "endm":"Jun", "starty":"2014", "endy":"2014", "position":"IT Support (OJT)", "description":""},'+
+	'{"companyname":"Roccatech", "startm":"Jul", "endm":"Oct", "starty":"2016", "endy":"2016", "position":"SEO (OJT)", "description":""},'+
+	'{"companyname":"Sizmek", "startm":"May", "endm":"Feb", "starty":"2017", "endy":"2018", "position":"Creative Developer", "description":""}]';	
 var mynumbers =
 	'[{"number":"000-000-0000"},{"number":"032-401-0000"}]';
 var mycontact =
