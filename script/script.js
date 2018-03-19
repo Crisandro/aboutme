@@ -20,7 +20,6 @@ function initialize(){
     else{
         loads = loads + 1; 
         document.getElementById("container1").style.animation = "getin 2s ease";
-        console.log(loads);
     }
     
     
@@ -108,6 +107,4 @@ function myjobs(){
 
     }  
 }
-
-
 window.addEventListener("load", initialize);
