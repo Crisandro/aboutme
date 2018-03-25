@@ -53,7 +53,7 @@
     position: absolute;
     flex-direction: column;
     width: 100%;
-    height: 50vh;
+    height: 90vh;
     background-color: #150C0C;
     transition: 0.5s;
 }
@@ -513,6 +513,21 @@
     transition: 0.5s;
 }
 
+ul li a {
+    display: block;
+    padding: 9 0 ;
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    line-height: inherit;
+    font-size: 3.5vh;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    margin: 0 10px;
+    transition: .5s;
+}
+
 @media screen and (max-width: 750px) {
     #picture {
         position: absolute;
@@ -631,7 +646,7 @@
         position: absolute;
         flex-direction: column;
         width: 100%;
-        height: 45vh;
+        height: 90vh;
         background-color: #150C0C;
         transition: 0.5s;
     }
@@ -714,7 +729,7 @@
     #myjob{
         position: relative;
         width: 90vw;
-        height: 100%;
+        height: 30vw;
         transition: 0.5s;
         border-bottom: 1px #ddd dotted;
     }
@@ -804,7 +819,21 @@
         left: 50%;
         transform: translateX(-50%);
         display: flex;
-        
+    }
+    
+    ul li a {
+        display: block;
+        padding: 5 0 ;
+        position: relative;
+        width: 5vh;
+        height: 5vh;
+        line-height: inherit;
+        font-size: 3.5vh;
+        text-align: center;
+        text-decoration: none;
+        color: #FFF;
+        margin: 0 10px;
+        transition: .5s;
     }
     
     .jobtitle {
@@ -818,7 +847,8 @@
 
     .dates {
         position: absolute;
-        margin-top: 6vh;
+        top: 20%;
+        margin-top: 10%;
         font-size: 1vh;
         border: 1px #FFF solid;
         padding: 3px;
@@ -832,7 +862,7 @@
     .desc {
         position: relative;
         top: 3vh;
-        margin-top: 0;
+        margin-top: -10;
         margin-left: 0;
         left: 0%;
         text-align: center;
@@ -1017,7 +1047,7 @@
     .dates {
         position: absolute;
         left: 50%;
-        top: 4vh;
+        top: 11vw;
         transform: translateX(-50%);
         margin-top: 2vh;
         font-size: 1vh;
@@ -1027,6 +1057,21 @@
         background-color: #45618e;
         color: #FFF;
         transition: 0.5s;
+    }
+    
+    ul li a {
+        display: block;
+        padding: 5 0 ;
+        position: relative;
+        width: 5vh;
+        height: 5vh;
+        line-height: inherit;
+        font-size: 3.5vh;
+        text-align: center;
+        text-decoration: none;
+        color: #FFF;
+        margin: 0 10px;
+        transition: .5s;
     }
     
     /*.desc {
@@ -1112,20 +1157,7 @@ ul {
     margin: 0;
 }
 
-ul li a {
-    display: block;
-    padding: 9 0 ;
-    position: relative;
-    width: 5vh;
-    height: 5vh;
-    line-height: inherit;
-    font-size: 3.5vh;
-    text-align: center;
-    text-decoration: none;
-    color: #FFF;
-    margin: 0 10px;
-    transition: .5s;
-}
+
 
 ul li a span {
     position: absolute;
