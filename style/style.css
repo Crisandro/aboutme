@@ -45,7 +45,7 @@
 
 .box2 {
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     background-color: #150C0C;
 }
 
@@ -53,9 +53,11 @@
     position: absolute;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    right: 0.01%;
     background-color: #150C0C;
     transition: 0.5s;
+    border-left: #FFF solid 1px;
+    border-right: #FFF solid 1px;
 }
 
 #picture {
@@ -84,7 +86,7 @@
 #qoute {
     position: absolute;
     top: 25vh;
-    left: 37%;
+    left: 38%;
     font-size: 2vh;
     color: #FFF;
     width: 30vw;
@@ -129,7 +131,7 @@
 }
 
 .boxcontainer {
-    border: 1px #FFF solid;
+    border: 1px #fff solid;
     width: 100%;
     margin-bottom: 2vh;
     border-top-left-radius: 10px;
@@ -236,7 +238,6 @@
 .education {
     position: absolute;
     width: auto;
-    height: auto;
     left: 4%;
     top: 58vh;
     z-index: 999;
@@ -261,7 +262,6 @@
 .workexp {
     position: absolute;
     width: auto;
-    height: auto;
     left: 4%;
     top: 82vh;
     z-index: 999;
@@ -274,7 +274,6 @@
 #workinfo {
     position: absolute;
 	width: 70%;
-	height: 15vh;
 	top: 84vh;
 	left: 1vw;
     transition: 0.5s;
@@ -289,7 +288,7 @@
 #myjob {
     position: relative;
     width: 480px;
-    height: auto;
+    height: 11vh;
     padding: 0;
     margin: 0;
     transition: 0.5s;
@@ -349,7 +348,7 @@
     position: absolute;
     right: 35%;
     width: 0;
-    height: 55vh;
+    height: 60vh;
     z-index: 999;
     border: 1px #FFF solid;
     transition: 0.5s;
@@ -646,7 +645,6 @@ ul li a {
         position: absolute;
         flex-direction: column;
         width: 100%;
-        height: 90vh;
         background-color: #150C0C;
         transition: 0.5s;
     }
@@ -654,7 +652,6 @@ ul li a {
     .education {
         position: absolute;
         width: 100%;
-        height: auto;
         left: 0%;
         text-align: center;
         top: 56vh;
@@ -681,7 +678,6 @@ ul li a {
     .workexp {
         position: absolute;
         width: 100%;
-        height: auto;
         left: 0%;
         text-align: center;
         top: 90vh;
@@ -705,7 +701,7 @@ ul li a {
     .separate {
         position: absolute;
         right: 0;
-        top: 144vh;
+        top: 137vh;
         width: 100%;
         height: 0;
         border: 1px #FFF solid;
@@ -713,7 +709,7 @@ ul li a {
     }
     
     #resumepart {
-        height: 148vh;
+        height: 130vh;
     }
     
     .skills {
@@ -722,14 +718,14 @@ ul li a {
         height: 45vh;
         left: 50%;
         transform: translateX(-50%);
-        top: 148vh;
+        top: 138vh;
         transition: 0.5s;
     }
     
     #myjob{
         position: relative;
         width: 90vw;
-        height: 30vw;
+        height: 25vw;
         transition: 0.5s;
         border-bottom: 1px #ddd dotted;
     }
@@ -847,7 +843,7 @@ ul li a {
 
     .dates {
         position: absolute;
-        top: 20%;
+        top: 0%;
         margin-top: 10%;
         font-size: 1vh;
         border: 1px #FFF solid;
@@ -1033,7 +1029,7 @@ ul li a {
         left: 50%;
         transform: translateX(-50%);
         border: 1px #FFF solid;
-        height: 39vh;
+        height: 100%;
         width: 100%;
     }
 }
@@ -1226,4 +1222,8 @@ ul li a:hover span:nth-child(4){
 }
 .portfol {
     height: 55vh;
+}
+
+.part {
+   height: 4vh;
 }

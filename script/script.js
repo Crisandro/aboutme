@@ -28,6 +28,8 @@ function initialize(){
 function initcrisandro() {
     port();
     myjobs();
+    boxsize();
+    
     document.getElementById("facebooklink").href = mycontact.facebook;
     document.getElementById("codepenlink").href = mycontact.codepen;
     document.getElementById("githublink").href = mycontact.github;
@@ -71,6 +73,7 @@ function initcrisandro() {
     document.getElementById("myprogressbarpm").style.width = skills.PHP;
     document.getElementById("myprogressbarjq").style.animation = "zero 3s ease";
     document.getElementById("myprogressbarjq").style.width = skills.Javascript;
+    
 }
 
 function port(){
@@ -79,14 +82,13 @@ function port(){
         var penstart="<div class='pens' id='mypen'>";
         var head="<div class='penhead'>"+pen[i]["penname"]+"</div>";
         var body="<div class='penbody'>";
-        var frame = "<iframe height='100%' scrolling='no' title='Dark Room' src='"+pen[i]["iframe"]+"' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>";
-        var framebody = "See the Pen <a href='"+pen[i]["pen"]+"'>Dark Room</a> by Crisandro Basoy (<a href='https://codepen.io/crisandrobasoy'>@crisandrobasoy</a>) on <a href='https://codepen.io'>CodePen</a>.";
+        var frame = "<iframe height='100%' scrolling='no' title='"+pen[i]["penname"]+"' src='"+pen[i]["iframe"]+"' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>";
+        var framebody = "See the Pen <a href='"+pen[i]["pen"]+"'>Blur and Unblur</a> by Crisandro Basoy (<a href='https://codepen.io/crisandrobasoy'>@crisandrobasoy</a>) on <a href='https://codepen.io'>CodePen</a>.";
         var frameend= "</iframe>";
         var bodyend = "</div>";
         var penclose="</div>";
 
        $("#penlist").append(penstart+head+body+frame+framebody+frameend+bodyend+penclose); 
-
     }  
 }
 
@@ -94,7 +96,7 @@ function myjobs(){
 	for(var i=0;i<workexpe.length;i++)
     {
         var myjob = "<div id='myjob'>";
-        var jobtitle = "<div class='inline jobtitle' >";
+        var jobtitle = "<div class='inline jobtitle'>";
         var jobpos = "<h2 id='jobtitle'>"+workexpe[i]["position"]+"</h2>";
         var jobtitleclose = "</div>";
         var jobdate = "<div class='inline pull-right'>";
@@ -102,10 +104,16 @@ function myjobs(){
         var jobdateclose = "</div>";
         var jobdesc = "<div class='desc'>"+workexpe[i]["companyname"]+"</div>";
         var myjobclose = "</div>";
-        
-       $("#worklist").append(myjob+jobtitle+jobpos+jobtitleclose+jobdate+dates+jobdateclose+jobdesc+myjobclose); 
-
+        $("#worklist").append(myjob+jobtitle+jobpos+jobtitleclose+jobdate+dates+jobdateclose+jobdesc+myjobclose); 
     }  
+    
+}
+
+function boxsize(){
+    var defaultsize = "45vh";
+    var finalsize = pen.length * defaultsize;
+    
+    document.getElementById("penlist").style.height = finalsize;
 }
 
 
