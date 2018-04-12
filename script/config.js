@@ -1,5 +1,5 @@
 var aboutme = 
-	'{"name":"Crisandro Basoy", "age":20, "city":"New York", "qoute":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor." }';
+	'{"name":"Crisandro Basoy", "age":20, "city":"New York", "qoute":"I love playing around with javascripts and CSS and hopefully someday it could be a big help for the industry. Thats why Im always determined to learn." }';
 var personal =
 	'{"First":"Crisandro", "Last":"Basoy", "Middle":"Cabrera", "Birthmonth":"Its", "Birthdate":"a", "Birthmonthdigit":"2", "Birthyear":"secret", "Gender":"Male", "PlaceBirth":"Cebu City", "Address":"Cebu City, Phillipines"}';
 var statistics =
